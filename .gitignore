@@ -1,3 +1,5 @@
+.idea/
+
 client/src/generated/java
 
 .gradle
