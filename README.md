@@ -1,3 +1,7 @@
+## Unmaintained - Forks Welcomed
+
+Connectifier was acquired by LinkedIn in February 2016. As a result, our accounting systems will be changing to better integrate with our new parent company and this repository will no longer be maintained. 
+
 ## Downloading
 
 The library is available from the Central Maven Repository and can be used easily by many tools including Maven, Gradle, SBT, etc.
