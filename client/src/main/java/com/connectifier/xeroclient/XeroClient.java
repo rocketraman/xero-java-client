@@ -228,6 +228,16 @@ public class XeroClient {
     return put("BankTransactions", objFactory.createBankTransactions(array)).getBankTransactions();
   }
 
+  public List<BankTransaction> updateBankTransaction(BankTransaction bankTransaction) {
+    return post("BankTransactions", objFactory.createBankTransaction(bankTransaction)).getBankTransactions();
+  }
+
+  public List<BankTransaction> updateBankTransactions(List<BankTransaction> bankTransactions) {
+    ArrayOfBankTransaction array = new ArrayOfBankTransaction();
+    array.getBankTransaction().addAll(bankTransactions);
+    return post("BankTransactions", objFactory.createBankTransactions(array)).getBankTransactions();
+  }
+
   public List<BankTransfer> getBankTransfers() {
     return get("BankTransfers").getBankTransfers();
   }
